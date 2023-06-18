@@ -6,7 +6,7 @@ services:
                         - "25565:25565"
                         - "11111:11111"
                 volumes:
-                        - /home/max/craftaeder/server-data:/opt/data
+                        - ./server-data:/opt/data
                 environment:
                         JVM_ARGS: "-Xmx4G -Xms4G"
                 stdin_open: true
